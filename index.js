@@ -24,7 +24,7 @@ app.get('/getVideoInfo', async(req, res) => {
 
     let videoId = req.query.videoId;
 
-    let info = await ytdl.getBasicInfo(videoId);
+    let info = await ytdl.getInfo(videoId);
 
     res.json(info);
 
